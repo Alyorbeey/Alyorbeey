@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900 ;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+header {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #35736E;
+    height: 150px;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: flex;
+    padding-top: 16px;
+    width: 100%;
+    height: 56px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btn {
+    background: linear-gradient(135deg, yellow, red);
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+header nav ul li a:hover {
+    opacity: 0.8;
+}
+
+header nav ul li a:active {
+    border-bottom: 4px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    opacity: 0.7;
+    color: white;
+}
+
+.logo img:active {
+    opacity: 0.7;
+}
+
+main {
+    background-color: black;
+    padding: 70px 0px;
+
+}
+
+.main-basic ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-basic li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.main-basic ul li h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #35736E;
+    margin: 15px 0px;
+}
+
+.main-basic ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: linear-gradient(45deg, rgb(58, 58, 57), rgb(20, 5, 5));
+    border-radius: 10px;
+}
+
+.main-basic ul li p {
+    color: rgb(184, 176, 176);
+    width: 230px;
+    text-align: center;
+}
+
+.main-basic ul li a {
+    display: flex;
+    justify-content: center;
+align-items: center;
+margin-top: 15px;
+    background: linear-gradient(135deg, rgb(88, 212, 88), rgb(139, 7, 7));
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+@media screen and (max-width: 400px) {
+    header{
+        flex-direction: column;
+    }
+    header nav ul{
+   gap: 2px;
+     
+    }
+    .main-basic ul{
+        flex-direction: column;
+    }
+}
